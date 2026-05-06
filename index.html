@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EliteCuts Barber Co.</title>
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg?v=3" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=1" />
+    <link rel="shortcut icon" href="favicon.ico?v=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="progress" aria-hidden="true"></div>
+
+    <header class="navbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">E</div>
+        <div>
+          <p class="brand-name">EliteCuts</p>
+          <span class="brand-tag">Barber Co.</span>
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#barbers">Barbers</a>
+        <a href="#booking">Book</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i
+          id="theme-icon"
+          class="theme-toggle__icon fa-solid fa-toggle-on"
+          aria-hidden="true"
+        ></i>
+        <span class="theme-toggle__text">Light</span>
+      </button>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Luxury Grooming Studio</span>
+          <h1>Precision. Comfort. Signature Style.</h1>
+          <p>
+            Discover unmatched barber craftsmanship inspired by contemporary
+            luxury and classic tradition.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#booking">Reserve a Chair</a>
+            <a class="btn btn-secondary" href="#services">View Services</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services section">
+        <div class="section-intro reveal">
+          <span class="section-label">Tailored Services</span>
+          <h2>Designed for the Modern Gentleman</h2>
+          <p>
+            Every service combines expert technique with premium products to
+            create a polished, effortless finish.
+          </p>
+        </div>
+
+        <div class="service-grid reveal">
+          <article class="service-card">
+            <img
+              src="img/barbbing.jpg"
+              alt="Barber styling a client"
+              loading="lazy"
+            />
+            <div class="service-copy">
+              <h3>Signature Cut</h3>
+              <p>
+                Precision haircut with personalized styling and finishing touch.
+              </p>
+              <span class="service-price">$35</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img src="img/haircut1.jpg" alt="Hair dye styling" loading="lazy" />
+            <div class="service-copy">
+              <h3>Color &amp; Texture</h3>
+              <p>
+                Shading, dye blending, and texture shaping for a refined new
+                look.
+              </p>
+              <span class="service-price">$55</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="img/haircut2.jpg"
+              alt="Female styling service"
+              loading="lazy"
+            />
+            <div class="service-copy">
+              <h3>Beard Sculpt</h3>
+              <p>
+                Clean lines, conditioning care, and sculpted detail for a sharp
+                finish.
+              </p>
+              <span class="service-price">$28</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="offerings" class="service-menu section">
+        <div class="menu-header reveal">
+          <span class="gold-subtitle">Our Offerings</span>
+          <h2>Curated Grooming Rituals</h2>
+          <p>
+            A refined menu of face, hair and beard services crafted to make
+            every appointment feel extraordinary.
+          </p>
+        </div>
+
+        <div class="menu-grid reveal">
+          <div class="menu-column">
+            <article class="menu-item highlight">
+              <div class="item-title">
+                <span>Classic Haircut</span>
+                <span class="line"></span>
+                <span class="price">$35</span>
+              </div>
+              <p>
+                Precision cut, natural blending, and a tailored style finish.
+              </p>
+            </article>
+
+            <article class="menu-item">
+              <div class="item-title">
+                <span>The Royal Shave</span>
+                <span class="line"></span>
+                <span class="price">$45</span>
+              </div>
+              <p>Straight razor shave and conditioning balm.</p>
+            </article>
+          </div>
+
+          <div class="menu-column">
+            <article class="menu-item">
+              <div class="item-title">
+                <span>Beard Sculpture</span>
+                <span class="line"></span>
+                <span class="price">$25</span>
+              </div>
+              <p>
+                Detail trimming, shaping and nourishment for a refined beard.
+              </p>
+            </article>
+
+            <article class="menu-item highlight">
+              <div class="item-title">
+                <span>The Signature Package</span>
+                <span class="line"></span>
+                <span class="price">$75</span>
+              </div>
+              <p>
+                Executive haircut, royal shave, scalp massage, and luxury
+                finish.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-cta reveal">
+          <a class="btn btn-outline" href="#booking"
+            >View Full Treatment Menu</a
+          >
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery section">
+        <div class="section-intro reveal">
+          <span class="section-label">Gallery</span>
+          <h2>Craftsmanship in Motion</h2>
+          <p>
+            See the atmosphere, styling precision and memorable transformations
+            from inside the studio.
+          </p>
+        </div>
+
+        <div class="gallery-grid reveal">
+          <img
+            src="img/before_after.jpg"
+            alt="Before and after grooming"
+            loading="lazy"
+          />
+          <img
+            src="img/happyclient.jpg"
+            alt="Client smiling after haircut"
+            loading="lazy"
+          />
+          <img
+            src="img/happyclient1.jpg"
+            alt="Finished styling detail"
+            loading="lazy"
+          />
+          <img
+            src="img/salonchair.jpg"
+            alt="Premium barber chair"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section id="barbers" class="barbers section">
+        <div class="section-intro reveal">
+          <span class="section-label">The Team</span>
+          <h2>Masters Behind the Chair</h2>
+          <p>
+            Each stylist is selected for their craftsmanship, professionalism
+            and luxury service mindset.
+          </p>
+        </div>
+
+        <div class="barbers-grid reveal">
+          <article class="barber-profile">
+            <img
+              src="img/haircut3.jpg"
+              alt="Barber David Okeke"
+              loading="lazy"
+            />
+            <div class="barber-copy">
+              <h3>David Okeke</h3>
+              <p>Lead barber with 8 years of luxury grooming experience.</p>
+              <span class="barber-tag">Precision fades and executive cuts</span>
+            </div>
+          </article>
+
+          <article class="barber-profile barber-profile--featured">
+            <div class="barber-copy">
+              <span class="eyebrow">Craftsmanship</span>
+              <h3>The Hands Behind Every Appointment</h3>
+              <p>
+                Our barbers combine contemporary precision with classic
+                techniques to deliver a polished, refined result.
+              </p>
+              <ul class="barber-highlights">
+                <li>Personal consultation before every service</li>
+                <li>Clean detailing and premium finishing products</li>
+                <li>Consistent standards across every appointment</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="barber-profile">
+            <img
+              src="img/happyclient2.jpg"
+              alt="Barber Chinedu Eze"
+              loading="lazy"
+            />
+            <div class="barber-copy">
+              <h3>Chinedu Eze</h3>
+              <p>
+                Texture and styling expert known for calm service and clean
+                results.
+              </p>
+              <span class="barber-tag">Texture work and finishing style</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="barbers-note reveal">
+          <span class="eyebrow">Why Clients Return</span>
+          <h3>Luxury service with a personal touch.</h3>
+          <p>
+            From consultation to final finish, every appointment is designed to
+            feel relaxed, refined and tailored to the client in the chair.
+          </p>
+        </div>
+      </section>
+
+      <section id="booking" class="booking-section section">
+        <div class="booking-copy reveal">
+          <span class="section-label">Book Now</span>
+          <h2>Reserve Your Luxury Grooming Session</h2>
+          <p>
+            Choose a tailored experience and secure your preferred time in our
+            sophisticated studio.
+          </p>
+        </div>
+
+        <form class="booking-form reveal">
+          <div class="form-group">
+            <label>Select Service</label>
+            <div class="booking-service-grid">
+              <input
+                class="service-option__input"
+                type="radio"
+                name="service"
+                id="cut"
+                checked
+              />
+              <label for="cut" class="service-option">
+                <span class="service-option__title">Classic Cut</span>
+                <span class="service-option__price">$35</span>
+              </label>
+
+              <input
+                class="service-option__input"
+                type="radio"
+                name="service"
+                id="shave"
+              />
+              <label for="shave" class="service-option">
+                <span class="service-option__title">Beard Trim</span>
+                <span class="service-option__price">$25</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">Time</label>
+              <select id="time">
+                <option>10:00 AM</option>
+                <option>12:30 PM</option>
+                <option>02:00 PM</option>
+                <option>04:00 PM</option>
+                <option>06:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="text" placeholder="Your Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+
+          <button id="btn-primary" class="btn-primary" type="button">
+            Confirm Appointment
+          </button>
+        </form>
+      </section>
+
+      <section class="about-luxury section">
+        <div class="about-container reveal">
+          <div class="about-image">
+            <img
+              src="img/clipper.jpg"
+              alt="Barber tools and clipper"
+              loading="lazy"
+            />
+            <div class="experience-badge">Est. 2015</div>
+          </div>
+
+          <div class="about-content">
+            <span class="gold-subtitle">Our Story</span>
+            <h2>A Tradition of Modern Luxury</h2>
+            <p>
+              Rooted in master craftsmanship and elevated by contemporary style,
+              EliteCuts creates an atmosphere where comfort meets confidence.
+            </p>
+            <p>
+              We build each appointment around a thoughtful consultation,
+              premium products, and a finishing experience designed to make you
+              look and feel exceptional.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">10k+</span>
+                <span class="stat-label">Appointments Delivered</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Expert Barbers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="luxury-gallery section">
+        <div class="slider reveal">
+          <div class="gallery-header">
+            <span class="gold-accent">Studio Scenes</span>
+            <h2>A Legacy in Every Detail</h2>
+            <p>
+              Immerse yourself in the atmosphere, craftsmanship and luxury
+              touches that define EliteCuts.
+            </p>
+          </div>
+
+          <div class="slider-window">
+            <div class="slides">
+              <div class="slide">
+                <img
+                  src="img/salonblack.jpg"
+                  alt="Luxury salon interior"
+                  loading="lazy"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="img/washing_base_hairdresser.jpg"
+                  alt="Scalp treatment"
+                  loading="lazy"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="img/barbbing.jpg"
+                  alt="Barber at work"
+                  loading="lazy"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="img/before_after.jpg"
+                  alt="Before and after transformation"
+                  loading="lazy"
+                />
+              </div>
+              <div class="slide">
+                <img src="img/clipper.jpg" alt="clipper" loading="lazy" />
+              </div>
+              <div class="slide">
+                <img
+                  src="img/hairdyecolor.jpg"
+                  alt="hairdyecolor"
+                  loading="lazy"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="img/washingbase2.jpg"
+                  alt="washing base"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="slider__btn slider__btn--left"
+            aria-label="Previous slide"
+          >
+            &larr;
+          </button>
+          <button
+            class="slider__btn slider__btn--right"
+            aria-label="Next slide"
+          >
+            &rarr;
+          </button>
+          <div class="dots"></div>
+        </div>
+      </section>
+
+      <section class="stats section reveal">
+        <div class="stat-block">
+          <h3 class="counter" data-target="500">0</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-block">
+          <h3 class="counter" data-target="15">0</h3>
+          <p>Years of Excellence</p>
+        </div>
+      </section>
+
+      <section class="testimonials section">
+        <div class="section-intro reveal">
+          <span class="section-label">Testimonials</span>
+          <h2>What Clients Say After the Visit</h2>
+          <p>
+            Trusted by professionals, creatives and returning clients who value
+            detail, comfort and a polished finish.
+          </p>
+        </div>
+
+        <div class="testimonials-grid reveal">
+          <div class="testimonial-card">
+            <p>
+              "EliteCuts delivers a premium barber experience every time. The
+              atmosphere, attention and finish are unmatched."
+            </p>
+            <span class="testimonial-author">Olumide A.</span>
+          </div>
+
+          <div class="testimonial-card">
+            <p>
+              "My haircut stayed sharp for weeks. The consultation alone made it
+              clear these guys know their craft."
+            </p>
+            <span class="testimonial-author">Femi R.</span>
+          </div>
+
+          <div class="testimonial-card">
+            <p>
+              "The beard shaping was clean, balanced and exactly what I asked
+              for. I have already booked my next visit."
+            </p>
+            <span class="testimonial-author">Daniel K.</span>
+          </div>
+
+          <div class="testimonial-card">
+            <p>
+              "The team is professional, the studio feels luxurious, and the
+              service is consistently excellent."
+            </p>
+            <span class="testimonial-author">Michael E.</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section reveal">
+        <div class="contact-copy">
+          <span class="section-label">Connect</span>
+          <h2>Visit the Studio</h2>
+          <p>
+            Located in the heart of Victoria Island, our studio is designed for
+            comfort, privacy and an exceptional grooming experience.
+          </p>
+          <a class="btn btn-primary" href="https://wa.me/234000000000"
+            >Chat on WhatsApp</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="luxury-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h2 class="footer-logo">EliteCuts<span>Barber Co.</span></h2>
+          <p>
+            Defining modern grooming with precision, premium service and
+            timeless style since 2015.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://instagram.com" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5.25-3.1a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1Z"
+                />
+              </svg>
+            </a>
+            <a href="https://facebook.com" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6H17V4.8c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1V11H8v3h2.6v8Z"
+                />
+              </svg>
+            </a>
+            <a href="https://x.com" aria-label="X">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M18.9 2H22l-6.8 7.8L23 22h-6.1l-4.8-6.3L6.6 22H3.5l7.3-8.3L1 2h6.3l4.4 5.8L18.9 2Zm-1.1 18h1.7L6.4 3.9H4.6Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>The Studio</h3>
+          <p>123 Luxury Ave, Suite 400<br />Victoria Island, Lagos</p>
+          <a class="footer-link" href="tel:+234800000000">+234 800 000 0000</a>
+          <a class="footer-link" href="mailto:book@elitecutsbarber.com"
+            >book@elitecutsbarber.com</a
+          >
+        </div>
+
+        <div class="footer-column">
+          <h3>Hours</h3>
+          <ul>
+            <li><span>Mon - Fri</span><span>09:00 - 21:00</span></li>
+            <li><span>Sat</span><span>10:00 - 18:00</span></li>
+            <li><span>Sun</span><span>By Appointment</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 EliteCuts Barber Co. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
