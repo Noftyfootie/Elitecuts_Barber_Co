@@ -792,7 +792,7 @@ body.light-theme .service-option__input:checked + .service-option::before {
   padding: 1rem 1.1rem;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  color: var(--text);
+  color: var(--muted);
   border-radius: 16px;
 }
 
