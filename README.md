@@ -13,17 +13,17 @@ This project is a responsive one-page website for a premium barber brand. It inc
 
 ## Live Demo
 
-- Demo URL placeholder: `https://your-live-demo-link-here`
+- Demo URL placeholder:[https://elitecutsbarberco.vercel.app/]
 
 ## Screenshots
 
 ### Dark Mode
 
-![EliteCuts dark mode preview](docs/screenshots/dark-mode-preview.svg)
+![EliteCuts dark mode preview](img/screenshot_dark.png)
 
 ### Light Mode
 
-![EliteCuts light mode preview](docs/screenshots/light-mode-preview.svg)
+![EliteCuts light mode preview](img/Screenshot_light.png)
 
 ## Preview
 
@@ -77,6 +77,8 @@ barber/
    |- salon.jpg
    |- salonblack.jpg
    |- salonchair.jpg
+   |-screenshot_dark.png
+   |-screenshot_light.png
    |- shopwhite.jpg
    |- washing_base_hairdresser.jpg
    \- washingbase2.jpg
@@ -201,74 +203,6 @@ Browsers often cache favicons aggressively.
 
 - Any modern browser (Chrome, Edge, Firefox, Safari)
 - No build tools or dependencies needed
-
-## Customization Guide
-
-### Update Brand Name
-
-Edit the navbar and footer text in `index.html`.
-
-Search for:
-
-- `EliteCuts`
-- `Barber Co.`
-
-### Update Images
-
-Replace files inside the `img/` folder, then update the matching `src` values in `index.html` if filenames change.
-
-### Update Services and Prices
-
-Edit:
-
-- service cards
-- offerings menu
-- booking options
-
-All of these are inside `index.html`.
-
-### Update Team Members
-
-Edit the `#barbers` section in `index.html`.
-
-You can change:
-
-- names
-- images
-- specialties
-- descriptive text
-
-### Update Testimonials
-
-Edit the testimonials section in `index.html`.
-
-### Update Social Links
-
-In the footer, replace placeholder links such as:
-
-- `https://instagram.com`
-- `https://facebook.com`
-- `https://x.com`
-
-with your real business accounts.
-
-### Update Contact Information
-
-Edit the footer and contact section for:
-
-- address
-- phone number
-- email
-- WhatsApp link
-
-### Replace README Preview Images
-
-If you later capture real browser screenshots, replace:
-
-- `docs/screenshots/dark-mode-preview.svg`
-- `docs/screenshots/light-mode-preview.svg`
-
-You can keep the same filenames and the README will continue to work.
 
 ## Accessibility Notes
 

@@ -152,12 +152,11 @@ body.has-motion .reveal.active {
   width: calc(100% - 2.5rem);
   margin: 1rem 1.25rem 0;
   padding: 14px 1.25rem 14px 1.5rem;
-  background:
-    linear-gradient(
-      135deg,
-      color-mix(in srgb, var(--surface) 92%, transparent),
-      color-mix(in srgb, var(--surface-soft) 84%, transparent)
-    );
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--surface) 92%, transparent),
+    color-mix(in srgb, var(--surface-soft) 84%, transparent)
+  );
   backdrop-filter: blur(20px);
   border: 1px solid rgba(212, 175, 55, 0.14);
   border-radius: 999px;
@@ -906,7 +905,7 @@ body.light-theme .stat-number {
 
 .slide img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 12 / 5;
   object-fit: cover;
 }
 
@@ -1230,6 +1229,15 @@ body.light-theme .footer-bottom {
   .theme-toggle {
     padding: 0.75rem 0.9rem;
   }
+  .slider__btn {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    display: grid;
+    place-items: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1284,6 +1292,11 @@ body.light-theme .footer-bottom {
   .slider__btn {
     width: 44px;
     height: 44px;
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    display: grid;
+    place-items: center;
   }
 
   .footer-column li,
