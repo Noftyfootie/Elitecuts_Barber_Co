@@ -27,7 +27,7 @@ This project is a responsive one-page website for a premium barber brand. It inc
 
 ## Preview
 
-EliteCuts is designed to feel upscale, clean, and editorial. The UI combines:
+EliteCuts is designed to feel upscale and clean. The UI combines:
 
 - A floating luxury navbar
 - Dark and light theme support
