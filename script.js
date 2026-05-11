@@ -209,3 +209,5 @@ const slider = () => {
 };
 
 slider();
+
+console.log();
