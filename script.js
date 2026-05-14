@@ -210,4 +210,4 @@ const slider = () => {
 
 slider();
 
-console.log();
+console.log("what");
