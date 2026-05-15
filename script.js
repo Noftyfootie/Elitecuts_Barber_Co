@@ -211,3 +211,4 @@ const slider = () => {
 slider();
 
 console.log("what");
+console.log("");
